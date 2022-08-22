@@ -13,7 +13,7 @@ const server = http.createServer((req, res) => {
 
   if (!name) {
     res.end(
-      "<h1>Preencha seu nome e sua idade:</h1><form method='GET'><input type='text' name='name'/><input type='submit' value='Enviar'> </form>"
+      "<h1>Preencha seu nome:</h1><form method='GET'><input type='text' name='name'/><input type='submit' value='Enviar'> </form>"
     );
   } else {
     res.end(`<h1>Seja bem-vindo ${name} !</h1>`);
